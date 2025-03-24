@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Penjualan Toko Kelontong</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { color: #333; }
+        form, .section { margin-bottom: 30px; border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
+        label { display: block; margin-top: 10px; }
+        input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 10px; padding: 10px 20px; }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Program Pengelolaan Penjualan Toko Kelontong</h1>
+
+    <div class="section">
+        <h2>Entri Data Produk/Barang</h2>
+        <form>
+            <label>Nama Produk:</label>
+            <input type="text" name="nama_produk">
+
+            <label>Harga:</label>
+            <input type="number" name="harga">
+
+            <label>Stok:</label>
+            <input type="number" name="stok">
+
+            <button>Tambah Produk</button>
+        </form>
+    </div>
+
+    <div class="section">
+        <h2>Entri Data Pelanggan</h2>
+        <form>
+            <label>Nama Pelanggan:</label>
+            <input type="text" name="nama_pelanggan">
+
+            <label>Alamat:</label>
+            <textarea name="alamat"></textarea>
+
+            <label>Nomor Telepon:</label>
+            <input type="text" name="telepon">
+
+            <button>Tambah Pelanggan</button>
+        </form>
+    </div>
+
+    <div class="section">
+        <h2>Entri Transaksi Penjualan</h2>
+        <form>
+            <label>Nama Pelanggan:</label>
+            <input type="text" name="nama_pelanggan_transaksi">
+
+            <label>Produk yang Dibeli:</label>
+            <input type="text" name="produk_dibeli">
+
+            <label>Jumlah:</label>
+            <input type="number" name="jumlah_beli">
+
+            <label>Tanggal Transaksi:</label>
+            <input type="date" name="tanggal_transaksi">
+
+            <button>Tambah Transaksi</button>
+        </form>
+    </div>
+
+    <div class="section">
+        <h2>Laporan Stok Barang</h2>
+        <button>Tampilkan Laporan Stok</button>
+    </div>
+
+    <div class="section">
+        <h2>Laporan Data Pelanggan</h2>
+        <button>Tampilkan Laporan Pelanggan</button>
+    </div>
+
+    <div class="section">
+        <h2>Cari Informasi Produk</h2>
+        <form>
+            <label>Masukkan Nama Produk:</label>
+            <input type="text" name="cari_produk">
+            <button>Cari Produk</button>
+        </form>
+    </div>
+
+    <div class="section">
+        <h2>Laporan Faktur Jual</h2>
+        <button>Tampilkan Faktur Jual</button>
+    </div>
+
+    <div class="section">
+        <h2>Rekapitulasi Penjualan</h2>
+        <button>Per Hari</button>
+        <button>Per Bulan</button>
+        <button>Per Tahun</button>
+    </div>
+</body>
+</html>
